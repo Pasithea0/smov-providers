@@ -12,6 +12,7 @@ export const insertunitScraper = makeSourcerer({
   id: 'insertunit',
   name: 'Insertunit',
   rank: 60,
+  disabled: true,
   flags: [flags.CORS_ALLOWED],
   async scrapeShow(ctx) {
     const playerData = await ctx.fetcher<string>(`/embed/imdb/${ctx.media.imdbId}`, {
